@@ -26,7 +26,7 @@ echo "<directory>".PHP_EOL;
 foreach ($json as $entry) {
     echo "<entry>";
     echo "<extension>";
-    echo $entry['number'];
+    echo str_replace("00420","",$entry['number']);
     echo "</extension>";
     echo "<name>";
     echo $entry['name'];
