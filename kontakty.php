@@ -31,10 +31,10 @@ foreach ($json as $entry) {
     echo "<name>";
     echo $entry['name'];
     echo "</name>";
-    if (strpos( $entry['number'] ,'*')) {
-        echo "<presence>1</presence>";
-    } else {
+    if (strpos( $entry['number'] ,'*') === false ) {
         echo "<presence>0</presence>";
+    } else {
+        echo "<presence>1/presence>";
     };
     echo "</entry>".PHP_EOL;
 }
