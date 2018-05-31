@@ -34,7 +34,7 @@ foreach ($json as $entry) {
     if (strpos( $entry['number'] ,'*') === false ) {
         echo "<presence>0</presence>";
     } else {
-        echo "<presence>1/presence>";
+        echo "<presence>1</presence>";
     };
     echo "</entry>".PHP_EOL;
 }
