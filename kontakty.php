@@ -26,10 +26,10 @@ echo "<directory>".PHP_EOL;
 foreach ($json as $entry) {
     echo "<entry>";
     echo "<extension>";
-    echo str_replace("00420","",$entry['number']);
+    echo str_replace("00420","",trim($entry['number']));
     echo "</extension>";
     echo "<name>";
-    echo $entry['name'];
+    echo trim($$entry['name']);
     echo "</name>";
     if (strpos( $entry['number'] ,'*') === false ) {
         echo "<presence>0</presence>";
