@@ -29,9 +29,9 @@ foreach ($json as $entry) {
     echo str_replace("00420","",trim($entry['number']));
     echo "</extension>";
     echo "<name>";
-    echo trim($$entry['name']);
+    echo trim($entry['name']);
     echo "</name>";
-    if (strpos( $entry['number'] ,'*') === false ) {
+    if (strpos($entry['number'] ,'*') === false ) {
         echo "<presence>0</presence>";
     } else {
         echo "<presence>1</presence>";
